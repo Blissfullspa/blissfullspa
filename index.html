@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blissfull Spa</title>
+  <meta name="description" content="Blissfull Spa — combining excellence with affordability so more people can access wellness care.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--beige:#EEE7DB;--sage:#A3B18A;--gold:#C2A66B;--ink:#1F2A24}
+    *{box-sizing:border-box} html{font-size:16px}
+    body{margin:0;padding:0;color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;background:#EEE7DB}
+    .nav{display:flex;gap:.5rem;justify-content:center;align-items:center;padding:.9rem;background:var(--sage);position:sticky;top:0;z-index:10;flex-wrap:wrap}
+    .nav a{color:#0e271f;text-decoration:none;font-weight:700;padding:.6rem .8rem;border-radius:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:800;border:2px solid var(--gold)}
+    .btn-primary{background:var(--gold);color:#1f1a0e}
+    .hero{padding:2.5rem 1rem 1.5rem;text-align:center;background:linear-gradient(180deg,rgba(163,177,138,.92),rgba(238,231,219,.96))}
+    h1{margin:.15rem 0;color:#0e271f;font-size:clamp(1.9rem,6vw,3rem)}
+    .tagline{font-family:'Playfair Display', Georgia, serif;color:#274135;font-size:clamp(1rem,3.6vw,1.05rem)}
+    .section{padding:2rem 1rem;max-width:1000px;margin:0 auto}
+    .section h2{font-size:clamp(1.25rem,4.5vw,2rem);margin:0 0 1rem}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:#fff;border-radius:16px;padding:1rem;border:1px solid #dfe7df;box-shadow:0 10px 24px rgba(50,100,70,.4);transition:transform .25s,box-shadow .25s}
+    .card:hover{transform:translateY(-8px);box-shadow:0 18px 36px rgba(50,100,70,.55)}
+    .price{color:var(--gold);font-weight:800}
+    footer{text-align:center;color:#274135;padding:2rem 1rem}
+    .sticky-book{position:fixed;left:0;right:0;bottom:0;display:none;background:var(--gold);color:#1f1a0e;text-align:center;padding:1rem;font-weight:900;text-decoration:none;box-shadow:0 -6px 16px rgba(50,100,70,.35);z-index:9999}
+    @media(max-width:640px){.nav .btn{display:none}.sticky-book{display:block}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-primary" href="https://calendly.com/guilbeaultanna/new-meeting" target="_blank" rel="noopener">Book Now</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Blissfull Spa</h1>
+    <p class="tagline">A moment of calm in a chaotic world.</p>
+    <a class="btn btn-primary" href="https://calendly.com/guilbeaultanna/new-meeting" target="_blank" rel="noopener">Book Now</a>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Blissfull Spa</h2>
+      <p>Blissfull Spa was created from a simple belief: when we feel good in our bodies, we carry that balance and peace into every part of life. Here, the focus is always on you. I take time to listen, to understand your needs, and to create a calm space where you can truly unwind. To make each session personal, I prepare hand-blended massage oils designed to match your treatment.</p>
+      <p>Blissfull Spa was also created for people who may not have access to extended health benefits. If you don’t have coverage, Blissfull Spa is here for you. I believe relaxation and care should be available to everyone. By offering treatments at accessible prices and flexible options, my goal is to make wellness care more inclusive and reachable.</p>
+      <p>Many people find it difficult to prioritize their health and self-care because of the high cost of treatments. At Blissfull Spa, our mission is to close that gap by combining excellence with affordability. Everyone deserves the chance to experience balance, calm, and comfort — and my goal is to make that more accessible to you.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <article class="card"><h3>Swedish Massage</h3><p class="price">$80 · 60 min</p><p>Classic full-body treatment with light to moderate pressure for deep relaxation.</p></article>
+        <article class="card"><h3>Aromatherapy Massage</h3><p class="price">$80 · 60 min</p><p>Personalized essential-oil blend and rhythmic techniques to balance mood and calm.</p></article>
+        <article class="card"><h3>Deep Tissue Massage</h3><p class="price">$95 · 60 min</p><p>Slow, focused work for deeper muscle layers; custom homemade oil for sore areas.</p></article>
+        <article class="card"><h3>Foot Massage</h3><p class="price">$40 · 30 min</p><p>Reflexology-inspired focus for tired feet and lower legs to soothe fatigue.</p></article>
+        <article class="card"><h3>Hand Massage</h3><p class="price">$40 · 30 min</p><p>Targeted relief for hands, wrists, and forearms; great for keyboard strain.</p></article>
+        <article class="card"><h3>Head &amp; Shoulder</h3><p class="price">$40 · 30 min</p><p>Focused reset for stress zones to release tightness quickly.</p></article>
+        <article class="card"><h3>Head, Shoulder &amp; Neck</h3><p class="price">$50 · 40 min</p><p>Gentle traction and pressure-point work to ease posture-related stiffness.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Phone: 613-262-7025 · Email: info@blissfullspa.com</p>
+    <p>© <span id="y"></span> Blissfull Spa · Ottawa, ON · Site updated</p>
+  </footer>
+
+  <a class="sticky-book" href="https://calendly.com/guilbeaultanna/new-meeting" target="_blank" rel="noopener">Book Now</a>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
