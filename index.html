@@ -101,5 +101,24 @@
 
   <a class="sticky-book" href="https://calendly.com/guilbeaultanna/new-meeting" target="_blank" rel="noopener">Book Now</a>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const layer = document.createElement('div');
+  layer.className = 'drip-layer';
+  document.body.appendChild(layer);
+
+  const DROPS = 70; // make higher for more rain, lower for lighter
+  for (let i = 0; i < DROPS; i++) {
+    const d = document.createElement('span');
+    d.className = 'drop';
+    d.style.left = (Math.random()*100) + 'vw';
+    d.style.height = (8 + Math.random()*16) + 'vh';
+    d.style.animationDuration = (6 + Math.random()*6) + 's';
+    d.style.animationDelay = (-Math.random()*12) + 's';
+    layer.appendChild(d);
+  }
+});
+</script>
+
 </body>
 </html>
